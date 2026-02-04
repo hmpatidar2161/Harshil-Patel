@@ -538,15 +538,25 @@ a {
 
 .contact-details {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .contact-item {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  flex: 1;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.contact-item:last-child {
+  align-items: flex-end;
+  text-align: right;
 }
 
 .contact-item span {
