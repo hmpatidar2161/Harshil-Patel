@@ -48,6 +48,11 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* ------------------------
    HERO SECTION
 -------------------------*/
@@ -584,4 +589,16 @@ body {
 
 .social-icons a:hover {
   color: var(--accent-teal);
+}
+
+.work-item {
+  text-decoration: none;
+  color: inherit;
+}
+
+.work-item a:hover,
+.work-item a:focus,
+.work-item a:visited {
+  text-decoration: none;
+  color: inherit;
 }
