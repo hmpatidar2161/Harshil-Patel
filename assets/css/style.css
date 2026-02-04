@@ -540,16 +540,15 @@ a {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  max-width: 700px;
+  max-width: 420px;
   margin: 0 auto;
 }
 
 .contact-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 120px 1fr;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  text-align: left;
+  column-gap: 18px;
 }
 
 .contact-item span {
@@ -565,8 +564,7 @@ a {
   color: var(--text-light);
   text-decoration: none;
   font-size: 1rem;
-  text-align: right;
-  margin-left: auto;
+  text-align: left;
 }
 
 .contact-item a:hover {
