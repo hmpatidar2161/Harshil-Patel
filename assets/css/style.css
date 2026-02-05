@@ -368,6 +368,153 @@ a {
 }
 
 /* ------------------------
+   ABOUT SECTION
+-------------------------*/
+.about-section {
+  background: var(--dark-bg);
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.about-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.skill-group {
+  background: rgba(0, 229, 212, 0.05);
+  padding: 30px;
+  border-radius: 12px;
+  border-left: 3px solid var(--accent-teal);
+}
+
+.skill-group h3 {
+  color: var(--accent-teal);
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-family: var(--font-heading);
+}
+
+.skill-group ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-group li {
+  color: var(--text-muted);
+  padding: 8px 0;
+  font-size: 0.95rem;
+}
+
+.skill-group li:before {
+  content: "→ ";
+  color: var(--accent-gold);
+  margin-right: 8px;
+}
+
+.software-label {
+  color: var(--accent-gold);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ------------------------
+   TOOLS & SOFTWARE SECTION
+-------------------------*/
+.tools-section {
+  background: var(--dark-bg);
+  padding: 120px 20px;
+}
+
+.tools-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tools-category {
+  margin-bottom: 60px;
+}
+
+.tools-category-title {
+  color: var(--accent-teal);
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  font-family: var(--font-heading);
+  text-align: left;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+
+.tool-item {
+  background: rgba(0, 229, 212, 0.08);
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 229, 212, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tool-item:hover {
+  background: rgba(0, 229, 212, 0.15);
+  border-color: var(--accent-teal);
+  transform: translateY(-5px);
+}
+
+.tool-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  filter: brightness(0.95);
+  transition: filter 0.3s ease;
+}
+
+.tool-item:hover .tool-logo {
+  filter: brightness(1.1);
+}
+
+.tool-item i {
+  font-size: 2.5rem;
+  color: var(--accent-gold);
+  display: block;
+  margin-bottom: 15px;
+}
+
+.tool-item p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* ------------------------
    CONTACT
 -------------------------*/
 .contact-section {
@@ -409,6 +556,15 @@ a {
 .contact-details-table .contact-value a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: color 0.3s ease;
+  pointer-events: auto;
+}
+
+.contact-details-table .contact-value a:hover {
+  color: var(--accent-cyan);
+  text-decoration: underline;
 }
 
 /* ------------------------
@@ -439,6 +595,30 @@ a {
 
   .hero-buttons {
     flex-direction: column;
+  }
+
+  /* ABOUT SECTION */
+  .about-skills {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .skill-group {
+    text-align: center;
+    border-left: none;
+    border-top: 3px solid var(--accent-teal);
+  }
+
+  /* TOOLS GRID */
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tools-category-title {
+    text-align: center;
   }
 
   /* WORK GRID */
