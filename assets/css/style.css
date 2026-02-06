@@ -132,6 +132,7 @@ a {
 .btn.outline:hover {
   background: var(--accent-teal);
   color: #000;
+  transform: translateY(-3px);
 }
 
 /* ------------------------
@@ -172,31 +173,6 @@ a {
   color: var(--accent-gold);
 }
 
-/* FILTER BUTTONS */
-.work-filters {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-bottom: 50px;
-}
-
-.filter-btn {
-  background: transparent;
-  border: 1px solid var(--accent-teal);
-  color: var(--text-light);
-  padding: 10px 22px;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.filter-btn.active,
-.filter-btn:hover {
-  background: var(--accent-teal);
-  color: #000;
-}
-
 /* GRID */
 .work-grid {
   display: grid;
@@ -210,6 +186,7 @@ a {
   overflow: hidden;
   border-radius: 16px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .work-item img {
@@ -217,6 +194,10 @@ a {
   height: 100%;
   object-fit: cover;
   transition: transform 0.6s ease;
+}
+
+.work-item:hover {
+  transform: translateY(-5px);
 }
 
 .work-item:hover img {
@@ -489,16 +470,15 @@ a {
 }
 
 .tool-logo {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   margin-bottom: 15px;
-  filter: brightness(0.95);
-  transition: filter 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .tool-item:hover .tool-logo {
-  filter: brightness(1.1);
+  transform: scale(1.1);
 }
 
 .tool-item i {
@@ -707,6 +687,16 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
+  transition: all 0.3s ease;
+}
+
+.work-item:hover .placeholder {
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.10),
+    rgba(255,255,255,0.04)
+  );
+  border-color: var(--accent-teal);
 }
 
 .placeholder h3 {
