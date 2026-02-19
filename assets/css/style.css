@@ -62,12 +62,27 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 20px;
+  padding: 90px 20px 0;
   background: radial-gradient(
     circle at top,
     rgba(0, 229, 212, 0.08),
     transparent 60%
   );
+}
+
+.hero-profile {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-profile-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-teal);
+  box-shadow: 0 12px 35px rgba(0, 229, 212, 0.22);
 }
 
 .hero-title {
@@ -262,6 +277,19 @@ a {
   font-family: var(--font-heading);
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 50%;
 }
 
 .logo span {
@@ -567,6 +595,11 @@ a {
   .hero {
     height: auto;
     padding: 120px 20px 80px;
+  }
+
+  .hero-profile-image {
+    width: 110px;
+    height: 110px;
   }
 
   .hero-title {
