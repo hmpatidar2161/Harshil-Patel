@@ -77,10 +77,9 @@ a {
 }
 
 .hero-profile-image {
-  width: 100%;
-  max-width: 420px;
-  height: auto;
-  border-radius: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--accent-teal);
   box-shadow: 0 12px 35px rgba(0, 229, 212, 0.22);
