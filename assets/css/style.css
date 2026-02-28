@@ -105,13 +105,15 @@ a {
 }
 
 .hero-profile-image {
+  /* Mobile: show full, edge-to-edge photo without border */
   width: 100%;
-  max-width: 640px;
+  max-width: 100%;
   height: auto;
-  border-radius: 12px;
-  object-fit: contain;
-  border: 3px solid var(--accent-teal);
-  box-shadow: 0 12px 35px rgba(0, 229, 212, 0.22);
+  border-radius: 0;
+  object-fit: cover;
+  border: none;
+  box-shadow: none;
+  display: block;
 }
 
 .hero-left {
@@ -160,6 +162,8 @@ a {
     height: auto;
     object-fit: cover;
     border-radius: 12px;
+    border: 3px solid var(--accent-teal);
+    box-shadow: 0 12px 35px rgba(0, 229, 212, 0.22);
   }
 }
 
