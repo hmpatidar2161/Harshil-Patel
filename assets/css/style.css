@@ -99,8 +99,8 @@ a {
 }
 
 .hero-profile-image {
-  width: 80%;
-  max-width: 420px;
+  width: 100%;
+  max-width: 640px;
   height: auto;
   border-radius: 12px;
   object-fit: contain;
