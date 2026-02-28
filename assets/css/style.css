@@ -108,6 +108,13 @@ a {
   box-shadow: 0 12px 35px rgba(0, 229, 212, 0.22);
 }
 
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 @media (min-width: 900px) {
   .hero-content {
     flex-direction: row;
@@ -118,6 +125,7 @@ a {
 
   .hero-left {
     flex: 1 1 55%;
+    align-items: flex-start;
     text-align: left;
   }
 
@@ -137,7 +145,7 @@ a {
 
 @media (min-width: 900px) {
   .hero-buttons {
-    justify-content: flex-start;
+    align-self: center;
     margin-top: 24px;
   }
 }
