@@ -1,5 +1,5 @@
 /* ------------------------
-   ROOT VARIABLES
+    ROOT VARIABLES
 -------------------------*/
 :root {
   /* Base */
@@ -29,7 +29,7 @@
 }
 
 /* ------------------------
-   GLOBAL RESET
+    GLOBAL RESET
 -------------------------*/
 * {
   margin: 0;
@@ -54,7 +54,7 @@ a {
 }
 
 /* ------------------------
-   HERO SECTION
+    HERO SECTION
 -------------------------*/
 .hero {
   height: 100vh;
@@ -152,7 +152,7 @@ a {
 }
 
 /* ------------------------
-   SCROLL ANIMATION
+    SCROLL ANIMATION
 -------------------------*/
 .fade-up {
   opacity: 0;
@@ -166,7 +166,7 @@ a {
 }
 
 /* ------------------------
-   WORK SECTION
+    WORK SECTION
 -------------------------*/
 .work-section {
   padding: 100px 20px;
@@ -254,7 +254,7 @@ a {
 .tag.teal { background: var(--accent-teal); color: #000; }
 
 /* ------------------------
-   NAVBAR
+    NAVBAR
 -------------------------*/
 .navbar {
   position: fixed;
@@ -321,7 +321,7 @@ a {
 }
 
 /* ------------------------
-   MODAL
+    MODAL
 -------------------------*/
 .modal {
   position: fixed;
@@ -352,7 +352,7 @@ a {
 }
 
 /* ------------------------
-   UI UX SECTION (LIGHT)
+    UI UX SECTION (LIGHT)
 -------------------------*/
 .uiux-section {
   background: var(--light-bg);
@@ -378,7 +378,7 @@ a {
 }
 
 /* ------------------------
-   ABOUT SECTION
+    ABOUT SECTION
 -------------------------*/
 .about-section {
   background: var(--dark-bg);
@@ -449,7 +449,7 @@ a {
 }
 
 /* ------------------------
-   TOOLS & SOFTWARE SECTION
+    TOOLS & SOFTWARE SECTION
 -------------------------*/
 .tools-section {
   background: var(--dark-bg);
@@ -524,7 +524,7 @@ a {
 }
 
 /* ------------------------
-   CONTACT
+    CONTACT
 -------------------------*/
 .contact-section {
   background: var(--dark-bg);
@@ -577,7 +577,7 @@ a {
 }
 
 /* ------------------------
-   MOBILE RESPONSIVE
+    MOBILE RESPONSIVE
 -------------------------*/
 @media (max-width: 768px) {
 
@@ -652,7 +652,7 @@ a {
 }
 
 /* ------------------------
-   FOOTER
+    FOOTER
 -------------------------*/
 .footer {
   background: #080a0d;
@@ -666,7 +666,7 @@ a {
 }
 
 /* ------------------------
-   PLACEHOLDER CARDS
+    PLACEHOLDER CARDS
 -------------------------*/
 .placeholder {
   height: 280px;
@@ -705,7 +705,7 @@ a {
 }
 
 /* ------------------------
-   PLACEHOLDER WORK CARDS
+    PLACEHOLDER WORK CARDS
 -------------------------*/
 .placeholder {
   height: 280px;
@@ -756,7 +756,7 @@ a {
 }
 
 /* ------------------------
-   CONTACT SECTION
+    CONTACT SECTION
 -------------------------*/
 .contact-section {
   background: var(--dark-bg);
@@ -806,7 +806,7 @@ a {
 }
 
 /* ------------------------
-   FOOTER SOCIAL ICONS
+    FOOTER SOCIAL ICONS
 -------------------------*/
 .footer-content {
   display: flex;
