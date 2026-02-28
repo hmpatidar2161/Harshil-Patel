@@ -115,6 +115,15 @@ a {
   text-align: center;
 }
 
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 720px;
+}
+
 @media (min-width: 900px) {
   .hero-content {
     flex-direction: row;
@@ -125,6 +134,9 @@ a {
 
   .hero-left {
     flex: 1 1 55%;
+  }
+
+  .hero-text {
     align-items: flex-start;
     text-align: left;
   }
@@ -180,6 +192,7 @@ a {
   display: flex;
   gap: 20px;
   justify-content: center;
+  align-self: center;
 }
 
 .btn {
