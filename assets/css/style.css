@@ -98,6 +98,12 @@ a {
   justify-content: center;
 }
 
+/* On mobile: show image before text */
+.hero-right {
+  order: -1;
+  margin-bottom: 18px;
+}
+
 .hero-profile-image {
   width: 100%;
   max-width: 640px;
@@ -134,6 +140,7 @@ a {
 
   .hero-left {
     flex: 1 1 55%;
+    order: 0;
   }
 
   .hero-text {
@@ -144,6 +151,7 @@ a {
   .hero-right {
     flex: 0 0 40%;
     justify-content: center;
+    order: 0;
   }
 
   .hero-profile-image {
