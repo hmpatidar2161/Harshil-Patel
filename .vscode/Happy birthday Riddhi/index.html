@@ -519,6 +519,43 @@
             filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.5));
         }
 
+        .footer-credit {
+            position: fixed;
+            left: 50%;
+            bottom: 18px;
+            transform: translateX(-50%);
+            z-index: 20;
+            min-width: 230px;
+            padding: 10px 22px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+
+        .footer-name {
+            display: block;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.15;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        .footer-title {
+            display: block;
+            margin-top: 1px;
+            font-size: 0.82rem;
+            font-weight: 300;
+            line-height: 1.05;
+            letter-spacing: 0.5px;
+            color: rgba(255, 255, 255, 0.72);
+        }
+
         /* -------------------------------------
            NEW: PROFESSIONAL 3D CAKE SCENE
            ------------------------------------- */
@@ -792,6 +829,12 @@
             .cake-wrapper {
                 transform: scale(0.85);
             }
+
+            .footer-credit {
+                bottom: 12px;
+                min-width: 210px;
+                padding: 9px 18px;
+            }
         }
     </style>
 </head>
@@ -921,6 +964,11 @@
             <button class="btn-close" onclick="closeMessageModal()">Close Message</button>
         </div>
     </div>
+
+    <footer class="footer-credit">
+        <span class="footer-name">Harshil Patel</span>
+        <span class="footer-title">Creative Visual Storyteller</span>
+    </footer>
 
     <script>
         // Setup Ambient Floating Particles
